@@ -1556,13 +1556,6 @@ CREATE TABLE public.post_replacements (
     id integer NOT NULL,
     post_id integer NOT NULL,
     creator_id integer NOT NULL,
-    original_url text NOT NULL,
-    replacement_url text NOT NULL,
-    created_at timestamp without time zone NOT NULL,
-    updated_at timestamp without time zone NOT NULL,
-    file_ext_was character varying,
-    file_size_was integer,
-    image_width_was integer,
     created_at timestamp without time zone NOT NULL,
     updated_at timestamp without time zone NOT NULL,
     file_ext character varying,
@@ -5089,5 +5082,3 @@ INSERT INTO "schema_migrations" (version) VALUES
 ('20200713053034'),
 ('20200806101238'),
 ('20200910015420');
-
-
